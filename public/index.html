@@ -1,12 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruto Character Explorer</title>
-    <link rel="stylesheet" href="../src/css/styles.css"/>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../src/css/styles.css">
+  </head>
+  <body>
+    <h1>Naruto Character Explorer</h1>
+    <p>Pick a character to see basic bio info like village, clan, and more.</p>
+
+    <label for="characterSelect">Choose a character</label>
+    <select id="characterSelect">
+      <option value="">-- Select --</option>
+    </select>
+    <p id="status"></p>
+
+    <section id="details"></section>
+
+    <script type="module" src="../src/js/main.js"></script>
+  </body>
 </html>
