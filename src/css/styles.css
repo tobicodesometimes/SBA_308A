@@ -25,6 +25,14 @@ body {
     /* space between h1, p, controls */
     text-align: center;
     /* center header/paragraph text */
+    
+    /* Full-page background image */
+    min-height: 100vh;
+    background-image: url("../../public/images/naruto-wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Controls */
@@ -45,12 +53,13 @@ select {
 #details {
     width: 100%;
     max-width: 900px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 8px;
     padding: 16px;
     text-align: left;
 }
 
+/* Card + image layout */
 .card {
     display: grid;
     gap: 8px;
@@ -60,6 +69,19 @@ select {
     margin: 0;
 }
 
+.card .meta {
+    display: grid;
+    gap: 8px;
+}
+
+.card img {
+    width: 160px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Simple list styling */
 .card ul {
     list-style: none;
     padding: 0;
@@ -69,4 +91,15 @@ select {
 .card li {
     margin: 2px 0;
 }
+
+/* Two-column layout on wider screens */
+@media (min-width: 680px) {
+    .card {
+        grid-template-columns: 160px 1fr;
+        align-items: start;
+    }
+}
+
+
+
 
