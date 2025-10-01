@@ -19,7 +19,7 @@ Simple, responsive layout with accessible labels and status messaging
 How It Works
 
 On load, the app fetches GET /characters?limit=1000 from https://dattebayo-api.onrender.com
- and fills the <select>.
+ and fills the select dropdown menu.
 
 On selection, it tries GET /characters/:id (falls back to ?name=) and renders a details card.
 
