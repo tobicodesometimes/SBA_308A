@@ -24,3 +24,9 @@ On load, the app fetches GET /characters?limit=1000 from https://dattebayo-api.o
 On selection, it tries GET /characters/:id (falls back to ?name=) and renders a details card.
 
 Async is handled with async/await plus a tiny requestId guard so only the latest response updates the UI (avoids race conditions).
+
+Credits
+
+Data: Dattebayo Naruto API (https://dattebayo-api.onrender.com)
+
+Naruto © Masashi Kishimoto / Shueisha, TV Tokyo, Pierrot. This project is for educational/demo purposes only.
